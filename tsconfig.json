@@ -1,13 +1,12 @@
 {
-    "compilerOptions":{
-         "outDir": "./dist",
-         "allowJs": true,
-         "target": "ES5",
-         "skipLibCheck": true,
-         "strict": true,
-         "esModuleInterop": true
-    }, 
-  
-    "include": ["./src/**/*", "knexfile.ts"],
-  
-  }
+  "compilerOptions":{
+       "outDir": "./dist",
+       "target": "ES5",
+       "skipLibCheck": true,
+       "strict": true,
+       "esModuleInterop": true
+  }, 
+
+  "include": ["./src/**/*"],
+
+}
