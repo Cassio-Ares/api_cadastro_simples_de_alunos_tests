@@ -12,5 +12,5 @@ module.exports = {
   ],
 
   preset:'ts-jest',
-  testMatch:['<rootDir>/src/module/**/tests/*.spec.ts']
+  testMatch:['<rootDir>/src/module/**/**/*.spec.ts']
 }

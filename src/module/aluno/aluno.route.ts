@@ -12,8 +12,11 @@ router.get('/', async (_, res) => {
 });
 
 router.post('/', async (req, res) => {
+  if(!req.body.nome || !req.body.cpf){
+    return res.status(400).json({msg: "Verifique os dados pois nome e cpf são obrigatórios."});
+  }
   const data = await alunoController.store(req.body);
-  return res.status(200).json({ data });
+  return res.status(201).json({ data });
 });
 
 export default router;

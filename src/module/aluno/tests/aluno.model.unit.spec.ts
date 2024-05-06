@@ -1,6 +1,6 @@
 import { Aluno } from "../aluno.model";
 
-describe("aluno.model", () => {
+describe("UNI - aluno.model", () => {
   /**
    * Resumo deste mock:
    *
@@ -26,7 +26,7 @@ describe("aluno.model", () => {
     conectar: jest.fn(() => knexMock),
   };
 
-  it("deve retornar valores da tabela alunos", async () => {
+  it("UNI - deve retornar valores da tabela alunos", async () => {
     const aluno = new Aluno(knexServiceMock);
 
     const response = await aluno.getAll();
@@ -35,7 +35,7 @@ describe("aluno.model", () => {
     expect(response.length).toBe(0);
   });
 
-  it("deve salvar um cadastro de aluno na tabela", async () => {
+  it("UNI - deve salvar um cadastro de aluno na tabela", async () => {
      const aluno = new Aluno(knexServiceMock);
 
      const response = await aluno.store({

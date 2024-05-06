@@ -13,7 +13,7 @@ export class Aluno{
     return this.db('aluno').select();
   }
 
-  store = async<T> (params:T) =>{
+  store = async (params:any) =>{
     return this.db('aluno').insert(params);
   }
 }
