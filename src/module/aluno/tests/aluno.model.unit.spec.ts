@@ -1,19 +1,7 @@
 import { Aluno } from "../aluno.model";
 
 describe("UNI - aluno.model", () => {
-  /**
-   * Resumo deste mock:
-   *
-   * crio knexServiceMock que é do tipo any (que é nescessario para intanciar a class)
-   *
-   * e crio as funções para imitar a conexão:
-   *
-   * obterConexão que é uma função (por isso jest.fn) que chama a função
-   * select que é nescessaria para getALL e retorna .mockReturnValueOnce([]) que é recurso do jest.
-   *
-   */
-
-  let knexServiceMock: any;
+   let knexServiceMock: any;
 
   const knexMock = () => {
     return {
